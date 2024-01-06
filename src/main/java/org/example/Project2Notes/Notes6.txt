@@ -1,0 +1,110 @@
+What is Overriding? How can it be achieved? What can we override and
+what we cannot?
+
+Definition one:
+
+Method Overriding allows child classes to modify methods which are being inherited from the parents classes.
+Or declaring a method in subclass which is already present in parent class, so that a child class can give
+its own implementation.
+
+Definition two:
+
+Method overriding is a feature in Java that allows a subclass to provide a specific implementation of a method that
+is already defined in its superclass. This allows a subclass to customize or extend the behavior of the superclass
+method.
+To perform method overriding, the subclass must provide a method with the same signature (name, return type, and
+parameters) as the one in the superclass.
+
+__
+Achieving Overriding:
+Achieving method overriding in Java, should follow these rules:
+
+The method in the subclass must have the same signature (name, return type, and parameters) as the method in the
+superclass.
+The access level of the overriding method in the subclass cannot be more restrictive than the overridden method
+in the superclass.
+It can be the same or less restrictive.
+The overridden method in the superclass must be marked with the @Override annotation (optional but recommended for
+ clarity).
+
+Example of Method Overriding:
+java
+Copy code
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    // Method overriding
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Dog();  // Polymorphism: reference of superclass, object of subclass
+        animal.makeSound();        // Calls the overridden method in the Dog class
+    }
+}
+
+_
+[12:24 AM]
+-------------------------------------------------------------------
+[12:24 AM]
+What cannot be Overridden?
+
+A. Fields: Fields (variables) cannot be overridden; they can only be hidden by "re-declaring" them in the subclass.
+Example:
+
+class A {
+    int value = 10;
+}
+
+class B extends A {
+    // This is not an override; it hides the field from the superclass
+    int value = 20;
+}
+
+B. Static Methods: Static methods cannot be overridden.
+They are associated with the class, not with objects, and are resolved at compile-time.
+Example:
+
+class A {
+    static void staticMethod() {
+        System.out.println("Static method in class A");
+    }
+}
+
+class B extends A {
+    // This is not an override; it's a new static method in class B
+    static void staticMethod() {
+        System.out.println("Static method in class B");
+    }
+}
+
+C. Final Methods: Final methods cannot be overridden in subclasses.
+Example:
+
+class A {
+    final void finalMethod() {
+        System.out.println("Final method in class A");
+    }
+}
+
+class B extends A {
+    // This would result in a compilation error
+    // void finalMethod() {
+    //     System.out.println("Cannot override final method");
+    // }
+}
+
+___
+Note:
+
+Remember, when overriding a method, the signature (name, return type, and parameters) must match exactly,
+and the overriding method cannot have a more restrictive access modifier than the overridden method.
+The @Override annotation is not required but is recommended for clarity and to catch errors at compile-time.

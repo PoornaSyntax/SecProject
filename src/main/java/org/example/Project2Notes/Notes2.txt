@@ -1,0 +1,20 @@
+What is the usage of super and this? Super vs this? Super() vs super.? this()
+vs this.
+
+In Java, super and this are keywords that are used to refer to objects and invoke methods.
+They are often used to differentiate between instance variables and parameters with the same name,
+or to call methods or constructors of the superclass.
+
+this Keyword:
+this is a reference variable that refers to the current object.
+It is often used to differentiate instance variables from local variables when they have the same name.
+
+It is used to invoke the current object's method or "constructor".
+
+
+Super Keyword:
+super is a reference variable used to refer to the "Immediate" parent class object.
+
+It is often used to differentiate between "Superclass" members and "Subclass" members with the same name.
+
+It is used to invoke the superclass's method or "constructor

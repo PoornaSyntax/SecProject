@@ -1,0 +1,82 @@
+What is Overloading? How can it be achieved? What can we overload and
+what we cannot?
+
+
+Definition:
+
+Method overloading is a method that share the same name, but different parameters.
+Method name + parameters = method signature...
+
+
+Overloading in Java:
+
+Method overloading in Java is a feature that allows a class to have multiple methods with the same name but different parameters.
+Overloading is based on the number, type, and order of the parameters in the method signature.
+It provides a way to create more readable and flexible code by using the same method name for different behaviors.
+
+Achieving Overloading:
+To achieve method overloading, you need to define multiple methods in the same class with the same name but different parameter lists.
+The compiler differentiates between the methods based on the number and types of parameters.
+
+Example of Method Overloading:
+java
+Copy code
+public class Calculator {
+
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to add three integers
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Method to add two doubles
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    // Method to concatenate two strings
+    public String add(String a, String b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        System.out.println(calculator.add(5, 10));                  // Calls the first add method
+        System.out.println(calculator.add(5, 10, 15));              // Calls the second add method
+        System.out.println(calculator.add(3.5, 2.5));               // Calls the third add method
+        System.out.println(calculator.add("Hello", " World"));     // Calls the fourth add method
+    }
+}
+[11:53 PM]
+What can be Overloaded?
+
+A. Number of Parameters: You can overload a method by changing the number of parameters.
+B. Data Types of Parameters: You can overload a method by changing the data types of parameters.
+C. Order of Parameters: You can overload a method by changing the order of parameters.
+
+For instance,
+void exampleMethod(int a);
+void exampleMethod(int a, int b);
+void exampleMethod(double b, int a);
+
+What cannot be Overloaded?
+
+A. Return Type: Overloading based solely on the return type is not allowed.
+int exampleMethod(int a);
+double exampleMethod(int a);
+
+B. Only Names of Parameters: Changing only the names of parameters does not constitute overloading.
+void exampleMethod(int a);
+void exampleMethod(int b);
+
+C. Different Access Modifiers: Overloaded methods must have the same access modifiers.
+public void exampleMethod(int a);
+private void exampleMethod(int a);
+Keep in mind that when overloading,
+the methods in the same class should have a unique combination of the number and types of parameters.
+January 5, 2024

@@ -1,0 +1,38 @@
+2. What is Constructor? Use of a Constructor in the class? The Difference between Constructor and a Method?
+   Can we Overload a Constructor?
+
+   Definition:
+
+   Constructor in JAVA is used to create the "Instance" of the class. Constructor are almost similar to Methods, except
+   for two things-
+   it's name is the same as the "Class" name, and it has no "Return" type, even "Void".
+
+   If there is no "Constructor" in the class, compiler automatically creates a default "Constructor".
+   There are two types of Constructor:
+
+   Non Argument Constructor
+   Parameterized Constructor
+
+   In Java, a constructor is a special type of method that is used to initialize objects.
+   It is called when an object of a class is created, and it has the same name as the class itself.
+   Constructors are used to set initial values for the object's attributes and perform any necessary setup tasks.
+
+
+   The key differences between a constructor and a method are:
+
+   Name:
+
+   Constructor has the same name as the class.
+   Method has its own distinct name.
+   Return Type:
+
+   Constructor has no return type, not even void.
+   Method has a return type, which can be void or any other data type.
+   Invocation:
+
+   Constructor is "Implicitly"(Automatically) called when an object is created using the new keyword.
+   Method is "Explicitly"(Manually) called using its name.
+   Yes, you can overload a constructor.
+
+   Constructor "Overloading" is the process of having multiple constructors in a class with different "Parameter-Lists".
+   This allows you to create objects in different ways, providing flexibility to the users of your class.

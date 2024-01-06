@@ -1,0 +1,53 @@
+What is Inheritance? Benefits? Types? Explain each type
+
+Inheritance in Java:
+
+Inheritance is one of the key "Concepts" in Object-Oriented Programming (OOP) that allows a class (subclass or derived class)
+to inherit properties and behaviors from another class (superclass or base class).
+The subclass can reuse and extend the functionality of the superclass, promoting code reuse and organization.
+
+Benefits of Inheritance:
+Code Reusability: Inheritance allows you to reuse code from existing classes,
+reducing redundancy and promoting a modular approach to software development.
+
+Method Overriding: Subclasses can provide a specific implementation of a method defined in the superclass,
+allowing customization of behavior.
+
+Polymorphism: Inheritance enables polymorphism, where a subclass can be treated as an object of its superclass.
+This allows flexibility in code design and facilitates the creation of generic code.
+
+Easier Maintenance: Changes made to the superclass are automatically reflected in the subclasses.
+This promotes easier maintenance and updates to the codebase.
+
+Types of Inheritance in Java:
+
+There are five different types of Inheritance in JAVA.
+Single Inheritance:
+
+In single inheritance, a class can inherit from only one superclass.
+[5:21 PM]
+Multiple Inheritance (through interfaces):
+
+Java does not support multiple inheritance directly for classes (i.e., a class cannot extend more than one class).
+However, it supports multiple inheritance through interfaces.
+
+
+Multilevel Inheritance:
+
+In multilevel inheritance, a class is derived from another class, and then another class
+is derived from the intermediate class.
+
+
+Hierarchical Inheritance:
+
+In hierarchical inheritance, multiple classes inherit from a single superclass.
+
+
+Hybrid Inheritance:
+
+Hybrid inheritance is a combination of two or more types of inheritance mentioned above.
+
+
+
+Java supports single inheritance for classes to avoid ambiguity and complexity associated with multiple inheritance,
+but it compensates by allowing multiple inheritance through interfaces.
