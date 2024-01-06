@@ -13,54 +13,38 @@ password.
         private String userName;
         private String password;
 
-        public Registration(String email, String userName, String password) {
-           this.email = email;
-           this.userName= userName;
-            this.password=password;
-        }
 
         public void setEmail(String email) {
-            if (isValidEmail(email)) {
-                this.email = email;
-                System.out.println("Email set successfully: " + email);
+              this.email = email;
+            if (email.endsWith("@yahoo.com")) {
+
+                System.out.println("Email set successfully ");
             } else {
                 System.out.println("Invalid email format. Please use Yahoo email.");
             }
         }
 
          public void setUserName(String userName) {
-            if (isValidUserName(userName)) {
-                this.userName = userName;
-                System.out.println("Username set successfully: " + userName);
+             this.userName = userName;
+            if (userName.length()>6) {
+
+                System.out.println("Username set successfully " );
             } else {
                 System.out.println("Invalid username. Username should not be empty and should be at least 6 characters long.");
             }
         }
 
         public void setPassword(String password) {
-            if (isValidPassword(password)) {
-                this.password = password;
+            this.password = password;
+            if (password.length()>6 && !password.contains(userName)) {
+
                 System.out.println("Password set successfully.");
             } else {
                 System.out.println("Invalid password. Password should not be empty, should be at least 6 characters long, and should not contain the username.");
             }
         }
 
-        // method to validate email format
-        private boolean isValidEmail(String email) {
-            return email.toLowerCase().endsWith("@yahoo.com");
 
-        }
-
-        // method to validate username format
-        private boolean isValidUserName(String userName) {
-            return !userName.isEmpty() && userName.length() > 6;
-        }
-
-        // method to validate password format
-        private boolean isValidPassword(String password) {
-            return !password.isEmpty() && password.length() > 6 && !password.contains(userName);
-        }
 
         // Method to display user information
         public void displayUserInfo() {
@@ -70,9 +54,10 @@ password.
 
         public static void main(String[] args) {
 
-            Registration user = new Registration("abc@yahoo.com", "user123", "password123");
-
-            // Display user information
+            Registration user= new Registration();
+             user.setEmail("abc@yahoo.com");
+             user.setUserName("JohnSmith1");
+             user.setPassword("JohnSmith123");
             user.displayUserInfo();
         }
     }
