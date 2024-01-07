@@ -1,0 +1,14 @@
+What is Overloading? How can it be achieved? What can we overload and
+what we cannot?
+
+The ability to define multiple functions or methods with the same name but with
+a different parameters or arguments which allows to use the same  function or method name
+for different operations based on the input argument is a method overloading
+We can achieve method overloading by using the same method name but different parameter list.
+To achieve method overloading the return type must be the same.
+Overloaded methods give programmers the flexibility
+to call a similar method for different types of data.
+
+We can overload constructors and methods.  we cannot overload methods with same method signature.
+same access modifier , same return type and same method name in the method signature should be there
+with a different parameter list.

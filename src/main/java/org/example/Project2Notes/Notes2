@@ -1,0 +1,11 @@
+What is the constructor? Use of a constructor in the class? Difference
+between constructor and a method? Can we overload a constructor?
+
+Constructors are a special type of methods that is used to initialize objects. And they are
+called when an object is created using the new key word.
+
+Constructor have the same name as the class. Methods can have any valid name. Constructors do not have a return
+type. Methods have a return type. Constructors are called to initailize an objects, methods are called to perform operations
+
+We can overload a constructor, the process of having multiple constructors in a class with different
+parameter list is constructor overloading.

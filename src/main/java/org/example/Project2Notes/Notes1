@@ -1,0 +1,21 @@
+1. What types of variables we have in Java. Define all of them and explain the
+differences
+There a re three types of variables.
+1.Local varaiables
+2.Instance variables
+3.Instance a variables.
+
+A local varaible is declared inside a method
+A variable that is declared inside the class but outside the method. It is not declared as static.
+A variable that is declared as static is static variable. It cannot be local.
+Local variables will be destroyed once it exits the method , constructor or block.
+Local voriables have the limited scope to the block where they are declared.  Instance variables
+they are associated with specific instance of a class and parameters are local variables used to
+pass values to methods or constructors. Static variables have a broader scope  which
+can be shared among all instance of a class..
+Local variables hava a narrow scope.
+
+Final variables are whose value cannot be changed.
+Variables passed to methods or constructors are parameter variables, they are limited to a method or a constructor.
+The values are provided whenever the method or constructor are called.
+Parameters are local variables used to pass values to methods or constructors.

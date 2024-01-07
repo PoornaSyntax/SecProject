@@ -1,0 +1,13 @@
+What is the final keyword,usage and purpose?
+Final is a keyword  in java which  can be used with a class,
+with a variable and with a method
+When we use final keyword with an entity (class
+or variable or method), it gets the meaning that
+entity is complete and can not be modified
+further.
+final is a non access modifier
+final entities are impossible to inherit or override.
+The final keyword is useful when you want a variable to always store the same value, like PI (3.14159...)
+The uses of final keyword is to create constant variables, to prevent method overridign and to
+prevent inheritance. The purpose of final keyword is immutability, adds a layer of security and for the
+optimization of the entities.

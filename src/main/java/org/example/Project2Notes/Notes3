@@ -1,0 +1,12 @@
+What is the usage of super and this? Super vs this? Super() vs super.? this()
+vs this.
+
+super and this are keywords.
+The use of super is to refer immediate parent class instance variable and also it can be used to
+invoke immediate parent class method.
+The use of this keyword is used to differentiate between local and instance variable in a method call
+when they have the same name.
+super() is used to invoke the super class constructor. this() is used to invoke the current class
+constructor from another constructor in the same class.
+super() should be the first statement in the constructor of the child class.
+super. is used to access the fields or methods of the superclass.

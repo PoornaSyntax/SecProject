@@ -1,0 +1,24 @@
+What is Polymorphism? Types of Polymorphism? Differences between
+Overloading & Overriding?
+Polymorphism is the ability of one object to take many forms.
+Polymorphism is one of the oops feature that allows us to perform a single action in different ways.
+Polymorphism is the capability of a method to do different things based on the object that it is
+acting upon. There are two types of polymorphism -They are compile time polymorphism and run-time polymorphism.
+compile time polymorphism - It is also called static binding or early binding. Method overloading falls under
+the compile time polymorphism. Method overriding is run-time polymorphism.
+
+Differences-
+For overloading methods must have the same name but different parameter list.
+For method orverriding must have the same name return type and parameter list.
+Overloading occurs at compile time, overriding occurs at run time.
+Overloading occurs within the same class. Overriding involves a relationship between a superclass
+and a subclass. We cannot achieve overriding wihtout inheritance.
+Overloading can be done at both static and non static methods. Overriding can be done only at
+non static methods.
+For the overridng methods access modifiers can be same or less restricted than the overridden
+methods in the super class.
+For overloading methods there is no restrictions for the access modifiers.
+For overriding method the return type should be the same. For overloading method it can be a same
+or different return type.
+
+

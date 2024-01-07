@@ -1,0 +1,44 @@
+What is Abstraction? How can we achieve an Abstraction in Java? What is
+Interface? What is Abstract Class? Interface vs Abstract Class?
+
+Abstraction is a process of hiding the implementation details from the user, only the
+functionality will be visible to the user.
+There are two ways to achieve abstraction
+1.Abstract class (0 to 100% or partial abstraction
+2.Interfaces(100% abstraction)
+
+Class that is declared with abstract keyword, is known as abstract class.
+An abstract class is one which may contain some defined method and
+some undefined method
+To utilize an abstract class, we have to inherit it from another class and
+provide implementations for the abstract methods in it. (It needs to be
+extended and its method implemented.)
+5. If we inherit an abstract class, we have to provide implementations for
+all the abstract methods in it.
+Interface is similar to class which is collection of public static final
+variables (constants) and public abstract methods.
+
+The abstract keyword is used to declare
+abstract class
+The interface keyword is used to declare
+interface
+Abstract class does not support multiple
+inheritance
+Interface support multiple inheritance
+Abstract class contains Constructors
+Interface doesn't contain Constructors
+ Abstract class can have abstract and non-abstract
+methods.
+An interface contains only incomplete
+member (signature of member) and Interface
+can have only abstract methods (Since Java 8
+we can have static and default methods)
+An abstract class can contain access modifiers
+for the methods, properties(variables)
+An interface cannot have access modifiers by
+default everything is assumed as public
+Interface has only final static variables.
+Abstract class can have final, static and
+non-static variables.
+An interface in Java can declare method signatures without providing
+the method implementations.

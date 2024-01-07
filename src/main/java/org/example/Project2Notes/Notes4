@@ -1,0 +1,18 @@
+What is Inheritance? Benefits? Types? Explain each type
+Inheritance . Inheritance is one of the features of oops which allows a class to inherit
+properties and behaviours from another class.
+extends is the keyword used to inherit properties or methods of a class.
+Benefits - reusability of code in subclass.
+Benefits of inheritance is method overriding.
+(Subclass can provide a specific implementaion for methods inherited from the superclass)
+With inheritance we can achieve polymorphism.
+Eliminates repetition of code
+
+Single inheritance are when a subclass inherit from only one super class.
+Multiple Inheritance-a subclass inherits from multiple superclasses(interfaces).The concept of multiple
+inheritance is not supported by Java, but it can be supported with the concept of interface.
+
+multi-level inheritance -A class is derived from another class and another class is derived from it
+forming a chain.
+Hybrid inheritance- A combination of two or more types of inheritance. That means it is a combination
+of single, multiple and multilevel or hierarchical inheritance.

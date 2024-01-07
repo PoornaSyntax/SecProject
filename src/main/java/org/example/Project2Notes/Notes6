@@ -1,0 +1,17 @@
+6. What is Overriding? How can it be achieved? What can we override and
+what we cannot?
+It is a concept in oops that allows a subclass to provide a specific implementation for a method
+that is already defined in its super class.
+Whenever same method name is existing in both base class and derived class with same types of parameters
+and same order and sequence of parameters is known as method Overriding.
+If subclass (child class) has the same method as declared in the parent class, it is known as
+method overriding in java.
+Note: Without Inheritance method overriding is not possible.
+
+Main method cannot be overridden.
+It can be achieved by having the same method signature name return type and parameters as the
+method in its super class
+
+We can override methods in subclass which have the same signature as the method in super class.
+We cannot override the static methods and final methods. And also contructors cannot be overridden.
+we can have the same access modifier or less restricted.
