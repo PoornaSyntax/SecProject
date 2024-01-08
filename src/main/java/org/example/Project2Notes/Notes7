@@ -9,7 +9,7 @@ the compile time polymorphism. Method overriding is run-time polymorphism.
 
 Differences-
 For overloading methods must have the same name but different parameter list.
-For method orverriding must have the same name return type and parameter list.
+For method overriding must have the same name return type and parameter list.
 Overloading occurs at compile time, overriding occurs at run time.
 Overloading occurs within the same class. Overriding involves a relationship between a superclass
 and a subclass. We cannot achieve overriding wihtout inheritance.
